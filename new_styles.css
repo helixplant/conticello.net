@@ -89,7 +89,47 @@
 }
 
 
+/* NAV BAR */
 
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0a1d1b;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 10px;  
+    font-size: 1.4vw; 
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:#496355;
+    
+}
+
+.nav-links li a:hover{
+    color: #f15551;
+    border-color: #f15551;
+    border-radius: 25px;
+    border: 2px solid;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+}
+
+
+
+
+/* BUFFER SECTION */
 
 .buffer .bg{
     position: relative;
@@ -101,9 +141,21 @@
 
 
 
+/* SECTIONS */
 
+
+/* ABOUT ME */
 
 .about-me{
     position:relative;
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
+
+.about-me .about-sect{
+
+    background-color: aqua;
+
+}
+
