@@ -53,36 +53,40 @@ ICONS:
                 <h1>Welcome</h1>
             </div>
         </section>
-        <section>
+
+        <section id="buffer-0"></section>
+            <div class="buffer">
+                <div class="bg buf-0"></div>
+            </div>
+        </section>
+
+
+        <section id="nav-cont">
             <div class="nav-bar">
                 <nav>
                     <ul class="nav-links">
                         <li><a href="#about-me">ABOUT ME</a></li>
                         <li><a href="#experience">EXPERIENCE</a></li>
                         <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#activites">ACTIVITIES</a></li>
+                        <li><a href="#activities">ACTIVITIES</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
-        <section id="buffer-0">
-            <div class="buffer">
-                <div class="bg buf-0"></div>
-            </div>
-        </section>
 
+        <section id="all-them">
         <section id="about-me">
             <div class="about-me">
                 
                 <div class="about-text">
                     <h1>Serena<br>Conticello</h1>
                     <div class="icon-bar">
-                        <img src="imgs/githubico.png">
-                        <img src="imgs/linkedinico.webp">
-                        <img src="imgs/blogico.png">
+                        <a href="https://github.com/helixplant" target="_blank" rel="noopener noreferrer"><img src="imgs/githubico.png"></a>
+                        <a href="https://www.linkedin.com/in/serena-co/" target="_blank" rel="noopener noreferrer"><img src="imgs/linkedinico.webp"></a>
+                        <abbr title="coming soon..."><img src="imgs/blogico.png"></abbr> <!-- no link yet -->
                     </div>
                     <div class="pink-box">
-                        LOOKING FOR FULL-TIME WORK
+                        SEEKING FULL-TIME EMPLOYMENT
                     </div>
                     <p>CYBERSECURITY | ARTIFICIAL INTELLIGENCE</p>
                     <div class="email">
@@ -91,7 +95,7 @@ ICONS:
                 </div>
 
                 <div class="about-photo">
-                    <img src="imgs/profile.png">
+                    <abbr title="me!"><img src="imgs/profile.png"></abbr>
                     
                 </div>
             </div>
@@ -101,14 +105,135 @@ ICONS:
 
         <section id="experience">
             <h1>EXPERIENCE</h1>
+            <div class="exp-cont">
+                <!-- Left section with buttons -->
+                <div class="left-section">
+                    <button onclick="displayContent('exp1')" class="active"><h6>CYBERSECURITY ENGINEERING INTERN</h6><h5>INTUIT</h5></button>
+                    <button onclick="displayContent('exp2')"><h6>ARTIFICIAL INTELLIGENCE LEAD RESEARCHER</h6><h5>ERAU - AKBAS LABS</h5></button>
+                    <button onclick="displayContent('exp3')"><h6>JAVA TEACHING ASSISTANT LEAD & MANAGER</h6><h5>ERAU</h5></button>
+                    <button onclick="displayContent('exp4')"><h6>UAV CYBERSECURITY RESEARCH INTERN</h6><h5>NATIONAL SCIENCE FOUNDATION</h5></button>
+                </div>
 
+                <!-- Right section with hidden content divs -->
+                <div class="right-section">
+                    <div id="exp1" class="content">
+                        <h2>INTUIT</h2>
+                        <h4>May 2024 - Aug. 2024</h4>
+                        <h3>CYBERSECURITY ENGINEERING INTERN</h3>
+                        <p>Contributed to the development of frameworks and solutions for Cloud and Enterprise security, 
+                            focusing on a large-scale non-human identity (NHI) management initiative. I proposed 
+                            implementing policies for Identity Management (IM) systems to monitor a field containing 
+                            billions of identities largely overlooked and ignored through hybrid efforts. By collaborating 
+                            with software teams and executives I was able to effectively find the needed perspective to 
+                            allow for continued NHI management efforts once my internship concluded.</p>
+                    </div>
+                    <div id="exp2" class="content hidden">
+                        <h2>ERAU - AKBAS LABS</h2>
+                        <h4>Sept. 2023 - Present</h4>
+                        <h3>ARTIFICIAL INTELLIGENCE LEAD RESEARCHER</h3>
+                        <p>Leading two research teams in the field of Neuroevolution, with a focus on 
+                            Multi-Agent Systems and Cybersecurity (both offensive and defensive). This 
+                            involves coordinating efforts on research papers and project development, while 
+                            pushing for breakthroughs in this emerging field. Additionally, work is being 
+                            done on evolutionary architecture and modular AI models to advance and improve 
+                            existing systems.</p>
+                    </div>
+                    <div id="exp3" class="content hidden">
+                    <h2>ERAU - EECS DEPT.</h2>
+                        <h4>Sept. 2022 - Present</h4>
+                        <h3>JAVA TEACHING ASSISTANT LEAD & MANAGER</h3>
+                        <p>Managing classes of 80+ students, and coordinating a team of Teaching Assistants 
+                            to ensure smooth execution of course goals. Responsible for the development and 
+                            production of comprehensive programming assignments for Labs and Homeworks that 
+                            reinforce Java and Object-Oriented Programming (OOP) principles, providing 
+                            students with a strong foundation in software development. In addition, I lead 
+                            interactive coding labs, which encourage collaborative problem-solving and live 
+                            application of OOP concepts. My role also involves overseeing the performance of 
+                            all TAs, providing mentorship, and ensuring that course expectations are 
+                            consistently met or exceeded.</p>
+                    </div>
+                    <div id="exp4" class="content hidden">
+                        <h2>NSF</h2>
+                        <h4>May 2023 - July 2023</h4>
+                        <h3>UAV CYBERSECURITY RESEARCH INTERN</h3>
+                        <p>Successfully executed and documented attacks against Unmanned Aerial Vehicles 
+                            (UAVs) to demonstrate vulnerabilities within drones that make up 70%+ of the 
+                            consumer market. Such attacks allowed for the UAV to become disabled, overriding 
+                            the user controls. The spoofing attack was successful and overrode the GPS on 
+                            both UAVs and the mobile device controlling the UAV. I co-authored a comprehensive 
+                            paper detailing the process and results of the offensive exploit testing against 
+                            the UAV along with proposed solutions.</p>
+                    </div>
+                </div>
+
+
+            </div>
 
         </section>
             
+        <section id="projects">
+            <h1>PROJECTS</h1>
 
+            <div class="proj-item-cont">
+
+                <div class="proj-item">
+                    <div class="proj-img"><img src="imgs/UNIThumbnail.png"></div>
+                    <div class="proj-name">UNIVERSITY CURRICULUM DEVELOPER</div>
+                    <div class="proj-skills">Java | OOP | C | MatLab | GitHub</div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-img"><a href="https://github.com/HKRamsden/ERAUPolyVerif" target="_blank" rel="noopener noreferrer"><img src="imgs/AutoThumbnail.png"></a></div>
+                    <div class="proj-name">AUTONOMOUS VEHICLE SCENARIO MODELING</div>
+                    <div class="proj-skills">AI | Neuroevolution | GitHub | Jira</div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-img"><a href="https://github.com/helixplant/CTF_WriteUps" target="_blank" rel="noopener noreferrer"><img src="imgs/CTFThumbnail.png"></a></div>
+                    <div class="proj-name">CTF WRITE-UP SERIES</div>
+                    <div class="proj-skills">CTF | Kali Linux | GitHub</div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-img"><a href="https://github.com/helixplant/Program_WriteUps" target="_blank" rel="noopener noreferrer"><img src="imgs/ProThumbnail.png"></a></div>
+                    <div class="proj-name">PROGRAM WRITE-UP SERIES</div>
+                    <div class="proj-skills">Python | C | Java | LeetCode | GitHub</div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-img"><img src="imgs/PWNThumbnail.jpeg"></div>
+                    <div class="proj-name">PWNAGOTCHI</div>
+                    <div class="proj-skills">AI | RL | DL</div>
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-img"><a href="https://github.com/helixplant/conticello.net" target="_blank" rel="noopener noreferrer"><img src="imgs/WebThumbnail.png"></a></div>
+                    <div class="proj-name">CONTICELLO.NET</div>
+                    <div class="proj-skills">HTML | CSS | GitHub</div>
+                </div>
+
+                <!--
+                <div class="proj-item">
+                    <div class="proj-img"></div>
+                    <div class="proj-name">PROJECT</div>
+                    <div class="proj-skills">HTML | CSS</div>
+                </div>
+                -->
+
+            </div>
+
+            
+
+        </section>
 
     
 
+        <section id="activities">
+            <h1>ACTIVITES</h1>
+            
+
+        </section>
+    </section>
 
         <script src="script.js"></script>
 

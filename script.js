@@ -1,15 +1,23 @@
+/**
+ * Author: helixplant
+ * Date: Nov. 1 2024
+ * 
+ * Purpose:
+ * To make my website look really cool 
+ * 
+ **/
 
+let activeButton = document.querySelector('.left-section button.active');
 
-
-
-	function readMore(btn) {
-		let post = btn.parentElement;
-		let dots = post.querySelector(".dots");
-		let moreText = post.querySelector(".more");
-		
-		dots.classList.toggle("hide");
-		moreText.classList.toggle("hide");
-	  
-		btn.textContent = moreText.classList.contains("hide") ? "Read More" : "Read Less";
-	  }
-	  
+function displayContent(contentId) {
+    const contentDivs = document.querySelectorAll('.content');
+    contentDivs.forEach(div => div.classList.add('hidden'));
+    const selectedDiv = document.getElementById(contentId);
+    selectedDiv.classList.remove('hidden');
+    const clickedButton = event.currentTarget;    
+    if (activeButton) {
+        activeButton.classList.remove('active');
+    }
+    clickedButton.classList.add('active');
+    activeButton = clickedButton;
+}
