@@ -293,57 +293,99 @@ h1{
 
 }
 
-.hidden {
+
+#experience .education{
+    width: 100%;
+    text-align: center;
+
+}
+
+#experience .education img{
+    width: 40%;
+    display: inline-block;
+
+}
+#experience .education .right-section{
+    width: 40%;
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+}
+
+#experience .education h1{
+    display: inline-block;
+    color: #0a1d1b;
+    font-size: calc(0.8vw + 1em);
+    justify-content: center;
+    margin: 0%;
+}
+
+#experience .education h2{
+    display: inline-block;
+    font-size: calc(0.5vw + 1em);
+    font-weight: normal;
+}
+
+#experience .education li{
+    display: inline-block;
+    text-align: center;
+    padding: 0px 1em;  
+
+
+}
+
+
+#experience .hidden {
     display: none;
 }
 
-.content {
+#experience .content {
     padding: 1rem;
 }
 
 
-.exp-cont {
+#experience .exp-cont {
     
     display: flex;
-    height: calc(1vw + 35em);
-    padding: 5%;
+    height: calc(1vw + 38em);
+    padding: 0%;
     align-items: center;
     justify-content: center;
 }
 
-.exp-cont img{
+#experience .exp-cont img{
     width: 100%;
 
 }
 
-.exp-cont h2{
+#experience .exp-cont h2{
     color: #f15551;
-    font-size: calc(2vw + 0.6em);
+    font-size: calc(1.7vw + 0.6em);
     display: inline;
 }
 
-.exp-cont h3{
+#experience .exp-cont h3{
     display:inline-block;
     font-size: calc(0.7vw + 0.8em);
     font-weight: lighter;
 
 }
 
-.exp-cont h4{
+#experience .exp-cont h4{
     display: inline;
     font-weight: lighter;
     float: right;
 
 }
 
-.exp-cont h5{
+#experience .exp-cont h5{
     font-size: calc(1.5vw + 0.20em);
     padding: 0%;
     margin: 0%;
     color: #0a1d1b;
 }
 
-.exp-cont h6{
+#experience .exp-cont h6{
     font-size: calc(0.5vw + 0.5em);
     font-weight: lighter;
     padding: 0%;
@@ -351,29 +393,29 @@ h1{
     color: #0a1d1b;
 }
 
-.exp-cont .right-section p{
+#experience .exp-cont .right-section p{
     color: #0a1d1b;
     font-size: calc(0.5vw + 0.5em);
 }
 
-.exp-cont .active h5,
-.exp-cont .active h6,
-.exp-cont .left-section button:hover h5,
-.exp-cont .left-section button:hover h6{
+#experience .exp-cont .active h5,
+#experience .exp-cont .active h6,
+#experience .exp-cont .left-section button:hover h5,
+#experience .exp-cont .left-section button:hover h6{
     color: #f9fcf4;
 }
 
-.exp-cont .active h6{
+#experience .exp-cont .active h6{
     color: #f9fcf4;
 }
 
 
-.exp-cont .left-section {
+#experience .exp-cont .left-section {
     width: 45%;
     padding: 1rem;
 }
 
-.exp-cont .left-section button {
+#experience .exp-cont .left-section button {
     width: 80%;
     height: 6em;
     padding: 1rem;
@@ -387,16 +429,16 @@ h1{
 
 }
 
-.exp-cont .left-section button.active {
+#experience .exp-cont .left-section button.active {
     background-color: #f15551;
 }
 
-.exp-cont .left-section button:hover {
+#experience .exp-cont .left-section button:hover {
     background-color: #f15551;
     color: #f9fcf4 !important;
 }
 
-.exp-cont .right-section {
+#experience .exp-cont .right-section {
     width: 45%;
     padding: 1rem;
 }
