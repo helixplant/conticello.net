@@ -1,399 +1,590 @@
-/**
-Author: helixplant
-Date: 
-Last Modified: Nov. 1 2024
+/******************************************
+* Author: helixplant
+* Date: 
+* Last Modified: Nov. 4 2024
+* *****************************************
+* Table of Contents:
+*     * Fonts
+*     * ALL
+*     * Welcome
+*     * Banner
+*     * Navigation
+*     * Buffer Section
+*     * About Me
+*     * Experience
+*     * Projects
+*     * Activities
+*     * Thank You
+* *****************************************
+* Structure of Class Structure:
+*     * Positioning & Display
+*     * Box Model
+*     * Background
+*     * Typography
+*     * Visual Styles
+*     * Transitions & Animations* 
+* 
+******************************************/
 
-**/
 
+
+/******************************************
+************ FONTS
+******************************************/
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'MontserratThin';
     src: url(fonts/Montserrat-Thin.ttf) format('truetype');
-    font-weight: lighter;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-Regular.ttf) format('truetype');
     font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'MontserratBold';
     src: url(fonts/Montserrat-Bold.ttf) format('truetype');
-    font-weight: bolder;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'MontserratXBold';
     src: url(fonts/Montserrat-ExtraBold.ttf) format('truetype');
-    font-weight: bold;
+    font-weight: normal;
+    font-style: normal;
 }
+/****************** END ******************/
 
 
+
+/******************************************
+************ ALL
+******************************************/
 * {
-    font-family: 'Montserrat';
+    /* Box Model */
     padding: 0px;
+    /* Background */
+    background-color: #f9fcf4;
+    /* Typography */
+    font-family: 'Montserrat';
     color: #0a1d1b;
-    
+    /* Scrolling Behavior */
     overscroll-behavior: none;
+    scroll-behavior: smooth;
+    /* Transitions & Animations */
     -webkit-transition: color 225ms ease-in-out;
     -moz-transition: color 225ms ease-in-out;
     -o-transition: color 225ms ease-in-out;
     -ms-transition: color 225ms ease-in-out;
     transition: color 225ms ease-in-out;
-   scroll-behavior: smooth;
 }
 
 h1{
-    font-size: 5vw;
+    /* Box Model */
+    margin: 5% 0%;
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    font-family: 'MontserratBold';
+    font-size: calc(4vw + 2em);
     color: #f15551;
-    margin: 5%;
 }
 
+h2{
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    font-family: 'MontserratBold';
+    font-size: calc(0.5vw + 1em);
+}
+
+h3{
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    font-family: 'MontserratBold';
+    font-size: calc(0.7vw + 0.8em);
+}
+
+h4, h5, h6{
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    font-family: 'Montserrat';
+    color: #0a1d1b;
+}
+
+p{
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    font-family: 'Montserrat';
+    font-size: calc(0.5vw + 0.5em);
+    color: #0a1d1b;
+}
+
+nav, li, a{
+    /* Background */
+    background-color: transparent;
+}
+/****************** END ******************/
 
 
+
+/******************************************
+************ WELCOME
+******************************************/
 #welcome h1{
+    /* Typography */
     color: #0a1d1b;
 }
 
 
+
+/******************************************
+************ BANNER
+******************************************/
+
 /* PARALLAX SCROLL EFFECT */
 .banner{
-    height: 100vh;
+    /* Positioning & Display */
     position: relative;
     overflow: hidden;
+    /* Box Model */
+    height: 100vh;
+    /* Background */
     background-color: #0a1d1b;
 }
 
 .banner .bg{
+    /* Positioning & Display */
     position: absolute;
     left: 0;
     bottom: 0;
+    /* Box Model */
     width: 100%;
     height: 100%;
+    /* Background */
     background-size: auto 100%;
     background-position: center bottom;
-    transition: 0.4s;
     background-repeat: no-repeat;
+    /* Transition */
+    transition: 0.4s;
 }
 
 .banner .bg-00{
+    /* Background */
     background-image: url(imgs/background.png);
     background-color: #0a1d1b;
 }
 
 .banner .bg-0{
+    /* Background */
     background-image: url(imgs/orb.png);
+    background-color: transparent;
 }
 
 .banner .bg-1{
+    /* Background */
     background-image: url(imgs/layer3.png);
+    background-color: transparent;
 }
 
 .banner .bg-2{
+    /* Background */
     background-image: url(imgs/layer2.png);
+    background-color: transparent;
 }
 
 .banner .bg-3{
+    /* Background */
     background-image: url(imgs/cloud.png);
+    background-color: transparent;
 }
 
 .banner .bg-4{
+    /* Background */
     background-image: url(imgs/layer1.png);
+    background-color: transparent;
 }
 
 .banner .bg-5{
+    /* Background */
     background-image: url(imgs/sides.png);
+    background-color: transparent;
 }
 
 .banner .bg-6{
+    /* Background */
     background-image: url(imgs/layer0.png);
     background-position: center calc(50% + 625px);
+    background-color: transparent;
 }
 
 .banner h1{
+    /* Positioning & Display */
     position: absolute;
     top: 20%;
-    left: 0;
-    width: 100%;
     text-align: center;
-    font-size: 8vw;
+    /* Box Model */
+    width: 100%;
+    /* Typography */
+    font-size: calc(8vw + 1em);
 }
+/****************** END ******************/
 
 
-/* NAV BAR */
+
+/******************************************
+************ NAVIGATION BAR
+******************************************/
 #nav-cont{
+    /* Positioning & Display */
     position: sticky;
-    top:0;
-    margin-top: -6em;
+    top: 0;
     z-index: 424242;
+    /* Box Model */
+    margin-top: -6em;
+    /* Background */
+    background-color: transparent;
 }
 
-.nav-bar{
-    
+#nav-cont .nav-bar{
+    /* Positioning & Display */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    /* Box Model */
     padding: 1px 5%;
-    background-color: none;
+    /* Background */
+    background-color: transparent;
 }
 
-.nav-links{
-    list-style: none;
-    background-color: #0a1d1b99;
+#nav-cont .nav-bar .nav-links{
+    /* Box Model */
     padding: 0.2em 1em;
+    border: 2px solid #0a1d1b00;
     border-radius: 45px;
-    border: 2px solid;
-    border-color: #0a1d1b00;
+    /* Background */
+    background-color: #0a1d1b99;
+    /* Typography */
     white-space: nowrap;
+    /* Other Visual Styles */
+    list-style: none;
 }
 
-.nav-links li{
+#nav-cont .nav-bar .nav-links li{
+    /* Positioning & Display */
     display: inline-block;
-    padding: 0px 0.3em;  
-    font-size: calc(0.5vw + 0.4rem); 
+    /* Box Model */
+    padding: 0px 0.3em;
     margin: 1em;
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    font-size: calc(0.5vw + 0.4rem);
 }
 
-.nav-links li a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: #f9fcf4;
-    border-radius: 15px;
-    border: 2px solid;
-    border-color: #0a1d1b00;
-
+#nav-cont .nav-bar .nav-links li a{
+    /* Box Model */
     padding: 5px;
     width: 2em;
     height: 1em;
-    
+    border: 2px solid #0a1d1b00;
+    border-radius: 15px;
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    color: #f9fcf4;
+    text-decoration: none;
+    font-family: 'MontserratBold';
+    /* Transitions & Animations */
+    transition: all 0.3s ease 0s;
+
 }
 
-.nav-links li a:hover{
+#nav-cont .nav-bar .nav-links li a:hover{
+    /* Box Model */
     border-color: #f9fcf4;
+    /* Background */
+    background-color: transparent;
 }
+/****************** END ******************/
 
 
 
-
-/* BUFFER SECTION */
-
+/******************************************
+************ BUFFER
+******************************************/
 .buffer{
-    position:relative;
+    /* Positioning & Display */
+    position: relative;
+    /* Box Model */
     width: 100%;
     height: 100px;
-    background-color: white;
 }
 
 .buffer .bg{
+    /* Positioning & Display */
     position: absolute;
+    /* Box Model */
     width: 100%;
     height: 12em;
+    /* Background */
     background-color: #0a1d1b;
 }
+/****************** END ******************/
 
 
 
-/* SECTIONS */
-
-
-/* ABOUT ME */
-
+/******************************************
+************ ABOUT ME
+******************************************/
 .about-me{
-    margin:0%;
-    position:relative;
+    /* Positioning & Display */
+    position: relative;
     display: flex;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap-reverse;
-    background-color: #f9fcf4;
+    text-align: center;
+    /* Box Model */
+    margin: 0%;
 }
 
 .about-me .about-text{
+    /* Positioning & Display */
     flex: 5 1 0;
+    /* Box Model */
     padding: 5em 0px 0px 20px;
-
 }
 
 .about-me .about-text h1{
-    font-size: 6em;
+    /* Box Model */
     margin: 0.2em;
+    /* Typography */
+    font-size: calc(4vw + 3em);
 }
+
 .about-me .about-text p{
-    color: #f15551;
-    font-weight: normal;
-    font-size: 0.8em;
+    /* Box Model */
     padding: 0px;
     margin: 0px;
+    /* Typography */
+    color: #f15551;
+    font-size: 1em;
 }
 
 .about-me .about-text .icon-bar{
+    /* Positioning & Display */
     display: flex;
     justify-content: center;
+    /* Box Model */
     margin-bottom: 2em;
+    height: calc(4vw + 5em);
 }
 
 .about-me .about-text .icon-bar img{
+    /* Box Model */
     padding: 1.3em 1em 0.8em;
     width: 4.2em;
+    /* Other Visual Styles */
     object-fit: contain;
+    /* Transitions & Animations */
     transition: all 0.3s ease 0s;
 }
-.about-me .about-text .icon-bar img:hover{
-    width: 4.9em;
 
+.about-me .about-text .icon-bar img:hover{
+    /* Box Model */
+    width: 4.9em;
 }
 
 .about-me .about-text .pink-box{
+    /* Positioning & Display */
     display: inline-block;
-    background-color: #f15551;
-    color: #f9fcf4;
+    /* Box Model */
     padding: 1.2em 2em;
     margin: 0px;
+    /* Background */
+    background-color: #f15551;
+    /* Typography */
+    font-family: 'MontserratXBold';
     font-size: 1.2em;
-    font-weight: lighter;
+    color: #f9fcf4;
 }
 
 .about-me .about-text .email{
+    /* Positioning & Display */
     display: inline-block;
-    color: #f15551;
-    font-weight: normal;
-    font-size: (1vw + 1em);
-    border-color: #f15551;
-    border-radius: 10px;
-    border: 3px solid;
-    padding: 0.5em 2.5em;
+    /* Box Model */
+    padding: 0.2em 2em;
     margin: 28px;
+    border: 3px solid #f15551;
+    border-radius: 10px;
+    /* Typography */
+    color: #f15551;
+    font-family: 'MontserratBold';
+    font-size: calc(0.5vw + 0.6em);
+    /* Transitions & Animations */
     transition: all 0.5s ease 0s;
-
 }
 
 .about-me .about-text .email:hover{
+    /* Background */
     background-color: #f15551;
+    /* Box Model */
     border-color: #f15551;
+    /* Typography */
     color: #f9fcf4;
 }
 
 .about-me .about-photo{
+    /* Positioning & Display */
     flex: 4 1 0;
     justify-content: center;
     align-items: center;
 }
 
 .about-me .about-photo img{
+    /* Box Model */
     max-width: 35em;
     min-width: 20em;
 }
+/****************** END ******************/
 
 
-/*EXPERIENCE*/
 
+/******************************************
+************ EXPERIENCE
+******************************************/
 #experience{
-    
-
+    margin-top: 10em;
 }
 
-
 #experience .education{
+    /* Box Model */
     width: 100%;
+    /* Typography */
     text-align: center;
-
 }
 
 #experience .education img{
-    width: 40%;
+    /* Positioning & Display */
     display: inline-block;
-
+    /* Box Model */
+    width: 40%;
 }
+
 #experience .education .right-section{
-    width: 40%;
+    /* Positioning & Display */
     display: inline-block;
+    /* Box Model */
+    width: 40%;
     padding: 0%;
     margin: 0%;
 }
 
-#experience .education h1{
+#experience .education .right-section h1{
+    /* Positioning & Display */
     display: inline-block;
-    color: #0a1d1b;
-    font-size: calc(0.8vw + 1em);
     justify-content: center;
+    /* Box Model */
     margin: 0%;
+    /* Typography */
+    color: #0a1d1b;
+    font-size: calc(1vw + 0.7em);
 }
 
-#experience .education h2{
+#experience .education .right-section h2{
+    /* Positioning & Display */
     display: inline-block;
-    font-size: calc(0.5vw + 1em);
+    /* Typography */
+    font-size: calc(0.5vw + 0.7em);
     font-weight: normal;
 }
 
 #experience .education li{
+    /* Positioning & Display */
     display: inline-block;
     text-align: center;
-    padding: 0px 1em;  
-
-
+    /* Box Model */
+    padding: 0px 1em;
+    /* Typography */
+    font-size: calc(0.6vw + 0.7em);
 }
 
 
-#experience .hidden {
+#experience .hidden{
+    /* Positioning & Display */
     display: none;
 }
 
-#experience .content {
+#experience .content{
+    /* Box Model */
     padding: 1rem;
 }
 
-
-#experience .exp-cont {
-    
+#experience .exp-cont{
+    /* Positioning & Display */
     display: flex;
-    height: calc(1vw + 38em);
-    padding: 0%;
     align-items: center;
     justify-content: center;
+    /* Box Model */
+    height: calc(1vw + 38em);
+    padding: 0%;
 }
 
 #experience .exp-cont img{
+    /* Box Model */
     width: 100%;
-
 }
 
 #experience .exp-cont h2{
+    /* Positioning & Display */
+    display: inline;
+    /* Typography */
     color: #f15551;
     font-size: calc(1.7vw + 0.6em);
-    display: inline;
 }
 
 #experience .exp-cont h3{
+    /* Positioning & Display */
     display:inline-block;
+    /* Typography */
     font-size: calc(0.7vw + 0.8em);
-    font-weight: lighter;
-
 }
 
 #experience .exp-cont h4{
+    /* Positioning & Display */
     display: inline;
-    font-weight: lighter;
     float: right;
-
 }
 
 #experience .exp-cont h5{
-    font-size: calc(1.5vw + 0.20em);
+    /* Box Model */
     padding: 0%;
     margin: 0%;
+    /* Typography */
+    font-family: 'MontserratXBold';
+    font-size: calc(1.5vw + 0.2em);
     color: #0a1d1b;
 }
 
 #experience .exp-cont h6{
-    font-size: calc(0.5vw + 0.5em);
-    font-weight: lighter;
+    /* Box Model */
     padding: 0%;
     margin: 0%;
+    /* Typography */
+    font-size: calc(0.5vw + 0.5em);
     color: #0a1d1b;
 }
 
 #experience .exp-cont .right-section p{
+    /* Typography */
     color: #0a1d1b;
     font-size: calc(0.5vw + 0.5em);
 }
@@ -402,169 +593,290 @@ h1{
 #experience .exp-cont .active h6,
 #experience .exp-cont .left-section button:hover h5,
 #experience .exp-cont .left-section button:hover h6{
+    /* Typography */
     color: #f9fcf4;
 }
-
-#experience .exp-cont .active h6{
-    color: #f9fcf4;
-}
-
 
 #experience .exp-cont .left-section {
+    /* Box Model */
     width: 45%;
     padding: 1rem;
 }
 
 #experience .exp-cont .left-section button {
+    /* Box Model */
     width: 80%;
     height: 6em;
     padding: 1rem;
     margin-bottom: 0.5rem;
-    background-color: #f9fcf4;
-    color: #0a1d1b;
     border: none;
-    cursor: pointer;
+    /* Background */
+    background-color: #f9fcf4;
+    /* Typography */
+    color: #0a1d1b;
     font-size: 1rem;
+    /* Other Visual Styles */
+    cursor: pointer;
+    /* Transitions & Animations */
     transition: all 0.5s ease 0s;
-
 }
 
-#experience .exp-cont .left-section button.active {
-    background-color: #f15551;
-}
-
+#experience .exp-cont .left-section button.active,
 #experience .exp-cont .left-section button:hover {
+    /* Background */
     background-color: #f15551;
     color: #f9fcf4 !important;
 }
 
 #experience .exp-cont .right-section {
+    /* Box Model */
     width: 45%;
     padding: 1rem;
 }
+/****************** END ******************/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*PROJECTS*/
+/******************************************
+************ PROJECTS
+******************************************/
 #projects{
+    /* Positioning & Display */
+    margin-top: 10em;
     position: relative;
+    /* Box Model */
     width: 100%;
+    /* Background */
     background-color: #f9fcf4;
 }
 
 
 #projects .proj-item-cont{
-    display:flex;
+    /* Positioning & Display */
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
+    /* Box Model */
+    width: 100%;
 
 }
-
-    /*project item*/
     
 #projects .proj-item-cont .proj-item{
-
+    /* Positioning & Display */
     position: relative;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    align-items: center;
-    width: 18em;
-    height: 15em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    /* Box Model */
+    width: 18em;
+    height: 15em;
     padding: 2% 4%;
-
 }
 
 #projects .proj-item-cont .proj-item .proj-img{
-    background-color: #0a1d1b;
-    border-radius: 15px;
+    /* Box Model */
     width: 20em;
-    height: 10em;    
+    height: 10em;
+    border-radius: 15px;
+    /* Background */
+    background-color: #0a1d1b;
+    /* Transitions & Animations */
     transition: all 0.5s ease 0s;
 }
+
 #projects .proj-item-cont .proj-item .proj-img img{
-    border-radius: 15px;
-    object-fit: cover;
+    /* Box Model */
     width: 100%;
     height: 100%;
+    border-radius: 15px;
+    /* Other Visual Styles */
+    object-fit: cover;
 }
 
 #projects .proj-item-cont .proj-item .proj-img:hover{
+    /* Box Model */
     width: 21em;
     height: 10.5em;
 }
 
 #projects .proj-item-cont .proj-item .proj-name{
-    background-color: #f15551;
-    color: #f9fcf4;
-    align-items: center;  
-    text-align: center;   
+    /* Positioning & Display */
+    align-items: center;
+    text-align: center;
+    /* Box Model */
     width: 16vw;
     min-height: 2vw;
     max-height: 5vw;
     margin-top: -2em;
-    font-size: calc(0.4vw + 0.5em);
     padding: 5%;
+    /* Background */
+    background-color: #f15551;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Typography */
+    color: #f9fcf4;
+    font-size: calc(0.5vw + 0.4em);
+    font-family: 'MontserratXBold';
 }
 
 #projects .proj-item-cont .proj-item .proj-skills{
+    /* Positioning & Display */
     text-align: center;
-    color:#f15551;
-    width: 25em
+    /* Box Model */
+    width: 25em;
+    /* Background */
+    background-color: transparent;
+    /* Typography */
+    color: #f15551;
 }
 
 
 #projects .proj-item-cont .proj-item-addt{
+    /* Box Model */
     width: 25em;
     height: 10em;
 }
 
 
 
-
+/******************************************
+************ ACTIVITIES
+******************************************/
 #activities{
-
-    background-color: purple;
+    /* Positioning & Display */
+    margin-top: 10em;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*MISC*/
-.pink-box{
-    display: inline-block;
-    background-color: #f15551;
+#activities .browser{
+    /* Positioning & Display */
+    margin: 5% auto;
+    /* Box Model */
+    width: calc(50vw + 7em);
+    height: calc(27vw + 7em);
+    border: 7px solid;
+    border-color: #0a1d1b;
+    border-radius: 20px;
+    /* Typography */
     color: #f9fcf4;
-    padding: 15px 25px;
-    margin: 20px;
-    text-align: center;
-    min-width: none;
+
+}
+#activities .browser .heading{
+    /* Positioning & Display */
+    position: absolute;
+    display: inline-block;
+    /* Box Model */
+    height: 1.4em;
+    width: calc(50vw + 7em);
+    background-color: #0a1d1b;
 }
 
-#all-them{
+#activities .browser .heading .cir{
+    /* Positioning & Display */
+    position: absolute;
+    display: inline-block;
+    margin-left: 5px;
+    /* Box Model */
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
     background-color: #f9fcf4;
 }
+
+#activities .browser p{
+    /* Positioning & Display */
+    padding: 0% 2%;
+    margin: 0%;
+    /* Typography */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(1vw + 0.3em);
+    color: #0a1d1b;
+}
+
+#activities .browser a{
+    /* Typography */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#activities .club-cont{
+    /* Positioning & Display */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#activities .club-cont .club{
+    /* Box Model */
+    width: 15em;
+    height: 7em;
+    /* Typography */
+    text-align: center;
+}
+
+#activities .club-cont .club h1{
+    /* Positioning & Display */
+    padding: 3%;
+    /* Box Model */
+    height: 1.3em;
+    /* Typography */
+    font-size: calc(0.9vw + 0.5em);
+    text-align: center;
+    /* Transitions & Animations */
+    transition: all 0.5s ease 0s;
+}
+
+#activities .club-cont .club a{
+    /* Typography */
+    text-decoration: none;
+}
+
+#activities .club-cont .club h1:hover{
+    /* Background */
+    background-color: #f15551;
+    /* Typography */
+    color: #f9fcf4;
+
+}
+/****************** END ******************/
+
+
+
+/******************************************
+************ THANK YOU
+******************************************/
+#thank-you{
+    /* Background */
+    background-color: #0a1d1b;
+}
+
+#thank-you h1{
+    /* Box Model */
+    margin: 0%;
+    padding-top: 5%;
+    /* Typography */
+    color: #f9fcf4d0;
+    font-size: calc(6vw + 1em);
+    font-family: 'MontserratThin';
+    text-align: center;
+}
+
+#thank-you p{
+    /* Box Model */
+    padding: 3% 9%;
+    margin: 0%;
+    /* Typography */
+    color: #f9fcf4;
+    font-family: 'MontserratThin';
+}
+/****************** END ******************/
+
+/******************************************
+************ END OF FILE
+******************************************/
